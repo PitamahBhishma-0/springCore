@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+     <bean id="mathpro" class="spring.dependency_injection_object.MathCheat"></bean>
+	<bean id="student" class="spring.dependency_injection_object.Student">
+		<property name="mathCheat" ref="mathpro"/>
+	</bean>
+
+	<bean id="another_student" class="spring.dependency_injection_object.Another_Student">
+		<property name="cheat" ref="mathpro"/>
+	</bean>
+
+
+</beans>

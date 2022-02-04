@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+     
+<!--    
+    =================== CONFIG FILE FOR SEETER DEPENDENCY INJECTION =============================== ==>
+    <bean id="student" class="spring.dependency_injection.Student">
+    <property  name="studentName" value="Gaurav"/>
+    <property name="id" value="24"/>
+    </bean>
+    <bean id="saurav" class="spring.dependency_injection.Student">
+    <property  name="studentName" value="SAURAV"/>
+    <property name="id" value="25"/>
+    </bean>
+--> 
+
+<!-- ===================  CONFIG FILE FOR CONSTRUCTOR INJECTION   ================================== -->
+   <bean id="saurav" class="spring.dependency_injection.Student">
+    <constructor-arg  name="studentName" value="SAURAV"/>
+    <constructor-arg name="id" value="25" type="int"/>
+    </bean>
+
+    <bean id="gaurav" class="spring.dependency_injection.Student">
+    <constructor-arg  value="523" type="int"/>
+    </bean>
+
+</beans>
