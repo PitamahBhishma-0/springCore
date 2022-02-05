@@ -72,7 +72,5 @@
 	<classpathentry kind="lib" path="/home/bhishmapitamah/Documents/spring-5.3.9-dist/spring-framework-5.3.9/libs/spring-aop-5.3.9-sources.jar"/>
 	<classpathentry kind="lib" path="/home/bhishmapitamah/Documents/spring-5.3.9-dist/spring-framework-5.3.9/libs/spring-aop-5.3.9-javadoc.jar"/>
 	<classpathentry kind="lib" path="/home/bhishmapitamah/Documents/spring-5.3.9-dist/spring-framework-5.3.9/libs/spring-aop-5.3.9.jar"/>
-	<classpathentry kind="lib" path="/home/bhishmapitamah/Documents/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="/home/bhishmapitamah/Documents/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
