@@ -1,0 +1,12 @@
+//  CODE EXPLANATION
+LEARNING THEORY IS IMPORTANT.
+
+
+
+Here i have assumed that a student is dependent on cheating in every exam. So I have made a interface called cheat so that it 
+it supports every cheating in  exam. While this  I have to make only one interface(cheat) that can implement many subjects
+(classes) in it. And when ever the student want to cheat in additional subjects he only have to implement the cheat interface.
+And we can only add beans of different subjects(classes) to make student cheat the different subject withoiut changing code.
+
+
+Thus from here we can find loose coupling achieved between STUDENT CLASS AND CHEAT INTERFACE through interface type.
