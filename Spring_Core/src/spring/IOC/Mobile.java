@@ -1,4 +1,4 @@
-package spring.gaurav;
+package spring.IOC;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -1,4 +1,4 @@
-package spring.gaurav;
+package spring.IOC;
 
 public interface Sim {
      void calling();
