@@ -3,6 +3,8 @@ ATTENTION !!!!!
 
 PLEASE READ THE THEORY PART BEFORE ACTUALLY SEEING THIS CODE OR U WILL GO TO COMA (Just kidding).
 
+I HAVE ADDED "description.txt" inside of every packages so that u guys can understand what is going in the packages.
+
 Hello, this is my bunch of practice code in spring may it help u understand a little bit of core spring.
 
 EACH CODE HAS IT'S OWN EXPLANATION. PACKAGES ARE THERE TO DISTINGUISH THE TOPIC IN SPRING CORE.
