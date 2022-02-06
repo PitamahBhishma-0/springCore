@@ -5,19 +5,19 @@
 	<!-- 
           AUTOWIRING BY === byName , here the name of id and object that we have created in master class(who is not dependent) in this case " Heart " must be
                                      same. Then spring automatically looks for the dependency that is required by ===)byName autowiring
-	<bean id="heart" class="com.autowiring.spring.Heart"></bean>
-	<bean id="human" class="com.autowiring.spring.Human" autowire="byName"></bean>
+	<bean id="heart" class="spring.autowiring.Heart"></bean>
+	<bean id="human" class="spring.autowiring.Human" autowire="byName"></bean>
 
 	-->
 	<!-- 
           AUTOWIRING BY === byType, here the name of qualified class path last part must match to the class defined in dependent class of master class 
                                     in this case " Heart " .Then spring automatically looks for the dependency that is required by ===)byType autowiring
-	<bean id="heartObject" class="com.autowiring.spring.Heart"></bean>
-	<bean id="human" class="com.autowiring.spring.Human" autowire="byType"></bean>
+	<bean id="heartObject" class="spring.autowiring.Heart"></bean>
+	<bean id="human" class="spring.autowiring.Human" autowire="byType"></bean>
     -->
 	<!-- AUTOWIRING BY === CONSTRUCTOR , here the spring searches for the constructor and automatically configures it -->
-    <bean id="heartObject" class="com.autowiring.spring.Heart"></bean>
-	<bean id="human" class="com.autowiring.spring.Human" autowire="constructor"></bean>
+    <bean id="heartObject" class="spring.autowiring.Heart"></bean>
+	<bean id="human" class="spring.autowiring.Human" autowire="constructor"></bean>
     
 
 

@@ -1,4 +1,4 @@
-package com.autowiring.spring;
+package spring.autowiring;
 
 public class Human {
 	Heart heart;
