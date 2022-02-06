@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="sim" class="spring.IOC.NTC">  
-        
-    </bean>
+	<!-- 
+          AUTOWIRING BY === byName , here the name of id and object that we have created in master class(who is not dependent) in this case " Heart " must be
+                                     same. Then spring automatically looks for the dependency that is required by ===)byName autowiring
+	<bean id="heart" class="com.autowiring.spring.Heart"></bean>
+	<bean id="human" class="com.autowiring.spring.Human" autowire="byName"></bean>
 
-   
+	-->
+	<!-- 
+          AUTOWIRING BY === byType, here the name of qualified class path last part must match to the class defined in dependent class of master class 
+                                    in this case " Heart " .Then spring automatically looks for the dependency that is required by ===)byType autowiring
+	<bean id="heartObject" class="com.autowiring.spring.Heart"></bean>
+	<bean id="human" class="com.autowiring.spring.Human" autowire="byType"></bean>
+    -->
+	<!-- AUTOWIRING BY === CONSTRUCTOR , here the spring searches for the constructor and automatically configures it -->
+    <bean id="heartObject" class="com.autowiring.spring.Heart"></bean>
+	<bean id="human" class="com.autowiring.spring.Human" autowire="constructor"></bean>
+    
+
 
 </beans>
