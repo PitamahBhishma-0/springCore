@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
 
+
+	<context:annotation-config />
+
+	<!-- THESE AUTOWIRING WERE DONE MANUALLY IN CONFIG FILE SIDE WE CAN ALSO DO IT IN JAVA SIDE USING @Autowire-->
 	<!-- 
           AUTOWIRING BY === byName , here the name of id and object that we have created in master class(who is not dependent) in this case " Heart " must be
                                      same. Then spring automatically looks for the dependency that is required by ===)byName autowiring
@@ -15,10 +21,20 @@
 	<bean id="heartObject" class="spring.autowiring.Heart"></bean>
 	<bean id="human" class="spring.autowiring.Human" autowire="byType"></bean>
     -->
-	<!-- AUTOWIRING BY === CONSTRUCTOR , here the spring searches for the constructor and automatically configures it -->
-    <bean id="heartObject" class="spring.autowiring.Heart"></bean>
+	<!-- AUTOWIRING BY === CONSTRUCTOR , here the spring searches for the constructor and automatically configures it
+                                        
+	<bean id="heartObject" class="spring.autowiring.Heart"></bean>
 	<bean id="human" class="spring.autowiring.Human" autowire="constructor"></bean>
-    
+    -->
 
+<!-- ==========================================================================================================================================-->
+	<!-- USING THE CONSTRUCTOR AUTOWIRE IN JAVA SIDE
+	<bean id="heartObject" class="spring.autowiring.Heart"></bean>
+	<bean id="human" class="spring.autowiring.Human"></bean>
+    -->
+
+	<!-- USING THE SETTER AUTOWIRE IN JAVA SIDE-->
+	<bean id="heartObject" class="spring.autowiring.Heart"></bean>
+	<bean id="human" class="spring.autowiring.Human"></bean>
 
 </beans>

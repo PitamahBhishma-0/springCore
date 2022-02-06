@@ -1,3 +1,8 @@
 Here I have discussed mainly 3 types of autowiring. The description of each type is given in config file outside the packages.
 
 Here I have taken Human class as dependent to Heart and I am performing DI in Human class. Where Body class is my test class.
+
+There are 2 methods of autowiring 
+  a)On config file
+  b)On JAVA side using @Autowire
+    --- IN THIS byType is resolved first than byName 
