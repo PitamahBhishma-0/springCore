@@ -9,7 +9,7 @@ public class Client {
 
 		
 	@SuppressWarnings("resource")
-	ApplicationContext context=new ClassPathXmlApplicationContext("spring_loose_coupling.xml"); 
+	ApplicationContext context=new ClassPathXmlApplicationContext("beans_spring_looseCoupling.xml"); 
 	Student student1=context.getBean("student",Student.class);
      student1.cheatingFinal();
 
