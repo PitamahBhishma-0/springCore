@@ -27,14 +27,25 @@
 	<bean id="human" class="spring.autowiring.Human" autowire="constructor"></bean>
     -->
 
-<!-- ==========================================================================================================================================-->
+	<!-- ==========================================================================================================================================-->
 	<!-- USING THE CONSTRUCTOR AUTOWIRE IN JAVA SIDE
 	<bean id="heartObject" class="spring.autowiring.Heart"></bean>
 	<bean id="human" class="spring.autowiring.Human"></bean>
     -->
 
-	<!-- USING THE SETTER AUTOWIRE IN JAVA SIDE-->
+	<!-- USING THE SETTER AUTOWIRE IN JAVA SIDE
 	<bean id="heartObject" class="spring.autowiring.Heart"></bean>
 	<bean id="human" class="spring.autowiring.Human"></bean>
+    -->
 
+	<!--Below is the case that any of the type of autowring fails in this we use @qualifier in JAVA side to configure the problem-->
+	<bean id="humanHeart" class="spring.autowiring.Heart">
+		<property name="nameOfAnimal" value="human"></property>
+		<property name="noOfHeart" value="1"></property>
+	</bean>
+	<bean id="octupusHeart" class="spring.autowiring.Heart">
+		<property name="nameOfAnimal" value="Octupus"></property>
+		<property name="noOfHeart" value="3"></property>
+	</bean>
+	<bean id="human" class="spring.autowiring.Human"></bean>
 </beans>

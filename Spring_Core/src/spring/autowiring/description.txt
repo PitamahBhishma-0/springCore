@@ -6,3 +6,13 @@ There are 2 methods of autowiring
   a)On config file
   b)On JAVA side using @Autowire
     --- IN THIS byType is resolved first than byName 
+    
+    AUTOWIRE NOT POSSIBLE FOR PRIMITIVE AND STRING DATA TYPES, BECAUSE HOW CAN A SPRING KNOW MY INDIVIDUAL DATA I HAVE TO ENTER.
+    
+    
+    
+    WHEN WE HAVE MULTIPLE OBJECT FOR SAME CLASS SPRING CANNOT CONFIGURE ITSELF SO WE PROVIDE @Qualifier Annotation helping implementing byType
+    autowiring.
+    
+    For example we have 2 human and octupus heart and the spring fails to create the object because it is confused to configure which type.
+    So in Human class to implement the Human heart I have used @Qualifier(id_name). to make spring easy.
