@@ -4,7 +4,7 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-
+       <context:property-placeholder location="classpath:beans_required_value_annotation.properties"/>
 	<bean id="student" class="spring.required_value_annotation.Student">
 		<property name="name" value="${student.name}"></property>
 		<property name="interestedCourse" value="${student.interestedCourse}"></property>
