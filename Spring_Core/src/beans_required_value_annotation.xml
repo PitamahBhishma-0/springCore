@@ -4,11 +4,22 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-       <context:property-placeholder location="classpath:beans_required_value_annotation.properties"/>
+
+	<!--                                    Activates the annotation used in JAVA side                                             -->
+	<context:annotation-config />
+
+	<!--                                    DEFINING THE PATH OF .properties file                         -->
+	<context:property-placeholder location="classpath:beans_required_value_annotation.properties" />
+
+
+	<!-- NO USE OF @VALUE ANNOTATION    
 	<bean id="student" class="spring.required_value_annotation.Student">
 		<property name="name" value="${student.name}"></property>
 		<property name="interestedCourse" value="${student.interestedCourse}"></property>
 		<property name="hobby" value="${student.hobby}"></property>
-
 	</bean>
+  -->
+
+	<!--                         USE OF @VALUE ANNOTATION  AT JAVA SIDE IN STUDENT_CLASS                                            -->
+	<bean id="student" class="spring.required_value_annotation.Student"></bean>
 </beans>
