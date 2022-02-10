@@ -1,4 +1,4 @@
-package required_value_annotation;
+package spring.required_value_annotation;
 
 public class Student {
 	private String name;
