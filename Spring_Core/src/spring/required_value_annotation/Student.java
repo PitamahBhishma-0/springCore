@@ -19,7 +19,7 @@ public class Student {
 		return name;
 	}
 
-	/*
+	/*---------------------- USE OF SETTERS TO INJECT -----------------------
 	 * @Value("${student.name}") public void setName(String name) { this.name =
 	 * name; System.out.println("setName method called");
 	 * 
