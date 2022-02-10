@@ -3,6 +3,8 @@ ATTENTION !!!!!
 
 PLEASE READ THE THEORY PART BEFORE ACTUALLY SEEING THIS CODE OR U WILL GO TO COMA (Just kidding).
 
+AND ALSO READ THE description.txt file(included in each packages) to better understand what is going on evey packages.
+
 Examples taken here are simple.
 
 TOPICS IN SPRING-C0RE IS DISTINGUISHED BY NAME IN PACKAGES.
