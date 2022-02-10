@@ -1,0 +1,7 @@
+Here we have discussed use of 2 annotation
+
+@Value and @Required
+
+@Value is used to set the values of the dependency
+@Required is used to make the input of that dependency compulsory 
+other-wise the object of given class wont form.
