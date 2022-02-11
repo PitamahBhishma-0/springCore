@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 @SuppressWarnings("deprecation")
 public class Student {
 	// @Value("Gaurav")//------------------- Defining static value
-	@Value("${student.name}") // ------------------ defining dynamic value USING .properties file
+	@Value("${student.name}")// ------------------ defining dynamic value USING .properties file
 	private String name;
 	// @Value("JAVA")
 	@Value("${student.interestedCourse}")

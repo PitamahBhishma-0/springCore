@@ -13,9 +13,12 @@ public class Human {
 
 	}
 
-	@Autowired
-	@Qualifier("humanHeart") // HERE I AM EXPLICITLY TELLING SPRING TO MAKE AN OBJECT FOR humanHeart type
-	public void setHeart(Heart heart) {
+	/*
+	 * @Autowired
+	 * 
+	 * @Qualifier("humanHeart") // HERE I AM EXPLICITLY TELLING SPRING TO MAKE AN
+	 * OBJECT FOR humanHeart type
+	 */	public void setHeart(Heart heart) {
 		this.heart = heart;
 	}
 
