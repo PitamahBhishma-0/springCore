@@ -1,6 +1,5 @@
 package spring.required_value_annotation;
 
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.beans.factory.annotation.Value;
 
 @SuppressWarnings("deprecation")

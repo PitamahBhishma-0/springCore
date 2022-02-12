@@ -4,8 +4,8 @@
 
 
 	<bean id="math" class="spring.loose_coupling.MathCheat"></bean>
-   <bean id="science" class="spring.loose_coupling.ScienceCheat"></bean>
-   <bean id="java" class="spring.loose_coupling.JavaCheat"></bean>
+	<bean id="science" class="spring.loose_coupling.ScienceCheat"></bean>
+	<bean id="java" class="spring.loose_coupling.JavaCheat"></bean>
 
 	<bean id="student" class="spring.loose_coupling.Student">
 		<property name="cheat" ref="java" />
