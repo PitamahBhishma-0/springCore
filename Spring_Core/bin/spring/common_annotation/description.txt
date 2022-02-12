@@ -1,0 +1,9 @@
+Here I have discussed about different annotation:
+
+
+I am only used java side to implement dependency injection
+
+
+@Configuration
+@Compenent-Scan
+@Bean
